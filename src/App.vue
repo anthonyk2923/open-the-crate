@@ -1,10 +1,6 @@
 <template>
-  <div id="info">
-    <p>{{ width }}x{{ height }}px</p>
-    <h1>{{ row_length }}</h1>
-  </div>
+  <Sidebar />
   <div id="outer">
-
     <div id="container" ref="container" class="shadow-lg bg-body-tertiary rounded">
       <Rows v-for="row in Number(rows)" :key="row" :row_length="row_length" @getImageSize="getImageSize" class="rows" />
     </div>
@@ -13,6 +9,7 @@
 
 <script>
 import Rows from "./components/Rows"
+import Sidebar from './components/Sidebar'
 export default {
   name: 'App',
   data() {
@@ -24,7 +21,8 @@ export default {
     }
   },
   components: {
-    Rows
+    Rows,
+    Sidebar,
   },
   methods: {
     getImageSize() {
@@ -61,5 +59,9 @@ export default {
   padding-left: 20%;
   height: 50%;
   margin: 10%;
+}
+
+body {
+  background-color: rgb(33, 37, 41)
 }
 </style>
