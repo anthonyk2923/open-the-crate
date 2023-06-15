@@ -1,5 +1,6 @@
 <template>
-    <Row v-for="box in Number(row_length)" :key="box" @getImageSize="$emit('getImageSize')" row_length="row_length" />
+    <Row v-for="box in row_length" :key="box" @getImageSize="$emit('getImageSize')" @pickNumber="$emit('pickNumber')"
+        row_length="row_length" :className="className" />
 </template>
 
 <script>
@@ -12,6 +13,7 @@ export default {
     },
     props: {
         row_length: Number,
+        className: String,
 
     }
 }
