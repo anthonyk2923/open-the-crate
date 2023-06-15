@@ -3,8 +3,8 @@
     please
     switch to a computer</h1>
   <div id="appz">
-    <Sidebar @submitForm="submitForm" />
     <Reveal :randomNumber="randomNumber" v-show="randomNumber !== 0.000000000129" />
+    <Sidebar @submitForm="submitForm" />
     <div id="outer">
       <div id="container" ref="container" class="shadow-lg bg-body-tertiary rounded">
         <Rows v-for="row in Number(rows)" :key="row" :row_length="row_length" @getImageSize="getImageSize"

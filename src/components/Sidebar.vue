@@ -1,8 +1,7 @@
 <template>
-    <div id="containerforside" class="bg-dark text-light p-5">
+    <div id="containerforside" class="bg-dark text-light p-5 pt-3">
         <div id="info">
-            <hr>
-            <h1 class="p-2">Open The Crate</h1>
+            <h2 class="">Open The Crate</h2>
             <hr>
             <h5>A more exciting and interactive way to pick a random number!</h5>
             <span>↓</span>

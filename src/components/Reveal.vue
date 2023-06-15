@@ -1,7 +1,10 @@
 <template>
-    <div align=center class="outer-clicked">
-        <div class="clicked shadow-lg p-3 mb-5 bg-white rounded">
-            <h1 class="text-dark">{{ randomNumber }}</h1>
+    <div class="pt-2">
+
+        <div align=center class="outer-clicked">
+            <div class="clicked shadow-lg p-3 bg-white rounded">
+                <h1 class="text-dark">{{ randomNumber }}</h1>
+            </div>
         </div>
     </div>
 </template>
@@ -24,9 +27,11 @@ export default {
     outline-offset: 0.5rem;
     width: 80%;
     text-align: center;
+    margin: 0;
 }
 
 .outer-clicked {
+    margin: 0;
     width: 30%;
 }
 </style>
